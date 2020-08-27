@@ -1,0 +1,87 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between; }
+  .header .logo {
+    padding-top: 10px;
+    padding-left: 23px;
+    transform: translateY(7px); }
+  .header .list {
+    list-style: none;
+    display: flex;
+    align-items: center; }
+    .header .list li {
+      display: inline-block;
+      padding: 0 18px;
+      position: relative; }
+      .header .list li:after {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        content: "";
+        width: 1px;
+        height: 70%;
+        background-color: white;
+        transform: rotate(15deg); }
+      .header .list li a {
+        color: white; }
+    .header .list .entry {
+      padding: 0; }
+      .header .list .entry a {
+        letter-spacing: 2px;
+        font-size: 2.6rem;
+        width: 240px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f39800;
+        font-weight: 900; }
+    .header .list .no-border:after {
+      display: none; }
+
+.top-mv .mv-slide .content {
+  position: relative; }
+  .top-mv .mv-slide .content img {
+    width: 100%; }
+  .top-mv .mv-slide .content .title-mv {
+    position: absolute;
+    z-index: 1;
+    top: 27%;
+    left: 20%;
+    transform: skew(-15deg);
+    background-size: cover; }
+    .top-mv .mv-slide .content .title-mv span {
+      font-weight: 900; }
+    .top-mv .mv-slide .content .title-mv .title {
+      color: white; }
+    .top-mv .mv-slide .content .title-mv .text-top {
+      font-size: 7rem;
+      display: block;
+      margin-bottom: 10px; }
+    .top-mv .mv-slide .content .title-mv .span-border {
+      padding-left: 10px;
+      font-size: 10rem;
+      position: relative;
+      color: #f39800;
+      background-color: white; }
+      .top-mv .mv-slide .content .title-mv .span-border:before {
+        content: url(../images/icon-white-top.png);
+        position: absolute;
+        top: -110px;
+        left: -20px; }
+      .top-mv .mv-slide .content .title-mv .span-border:after {
+        content: url(../images/icon-white-bottom.png);
+        position: absolute;
+        bottom: -29px;
+        right: -30px; }
+    .top-mv .mv-slide .content .title-mv .span-main {
+      font-size: 8rem;
+      margin-bottom: 15px; }
+    .top-mv .mv-slide .content .title-mv p {
+      font-size: 3rem;
+      font-weight: 500; }

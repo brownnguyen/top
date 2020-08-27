@@ -1,0 +1,114 @@
+@import "./variables.scss";
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        padding-top: 10px;
+        padding-left: 23px;
+        transform: translateY(7px);
+    }
+    .list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        li {
+            display: inline-block;
+            padding: 0 18px;
+            position: relative;
+            &:after {
+                position: absolute;
+                right: 0;
+                top: 5px;
+                content: "";
+                width: 1px;
+                height: 70%;
+                background-color: white;
+                transform: rotate(15deg);
+            }
+
+            a {
+                color: white;
+            }
+        }
+        .entry {
+            padding: 0;
+            a {
+                letter-spacing: 2px;
+                font-size: 2.6rem;
+                width: 240px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $orange;
+                font-weight: 900;
+            }
+        }
+        .no-border {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+.top-mv {
+    .mv-slide {
+        .content {
+            position: relative;
+            img {
+                width: 100%;
+            }
+            .title-mv {
+                position: absolute;
+                z-index: 1;
+                top: 27%;
+                left: 20%;
+                transform: skew(-15deg);
+                background-size: cover;
+                span {
+                    font-weight: 900;
+                }
+                .title {
+                    color: white;
+                }
+                .text-top {
+                    font-size: 7rem;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                .span-border {
+                    padding-left: 10px;
+                    font-size: 10rem;
+                    position: relative;
+                    color: $orange;
+                    background-color: white;
+                    &:before {
+                        content: url(../images/icon-white-top.png);
+                        position: absolute;
+                        top: -110px;
+                        left: -20px;
+                    }
+                    &:after {
+                        content: url(../images/icon-white-bottom.png);
+                        position: absolute;
+                        bottom: -29px;
+                        right: -30px;
+                    }
+                }
+                .span-main {
+                    font-size: 8rem;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 3rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
