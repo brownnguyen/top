@@ -437,6 +437,16 @@ h2.title {
     width: 100%;
     .business-block-1 {
       width: 51%;
+      .slick-arrow {
+        background-color: $orange;
+        width: 100px;
+        height: 80px;
+      }
+      .slick-next {
+        &:before {
+          content: "";
+        }
+      }
       .content {
         .img {
           display: block;
@@ -460,7 +470,7 @@ h2.title {
             width: 200px;
             height: 150%;
             top: -26px;
-            left: -215px;
+            left: -240px;
             transform-origin: right center;
             transform: rotate(10deg);
           }
@@ -471,8 +481,10 @@ h2.title {
       }
     }
     .business-block-2 {
-      width: 49%;
+      overflow: hidden;
+      width: 48%;
       .content {
+        overflow: hidden;
         .img {
           display: block;
           width: 100%;

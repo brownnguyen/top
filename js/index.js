@@ -7,9 +7,9 @@ $('.mv-slide').slick({
 $('.business-block-1').slick({
     arrows: false,
     slidesToShow: 1,
-    arrows: false,
+    arrows: true,
     fade: true,
-    asNavFor: '.business-block-2'
+    asNavFor: '.business-block-2',
 });
 $('.business-block-2').slick({
     arrows: false,

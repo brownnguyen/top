@@ -354,6 +354,12 @@ h2.title {
     width: 100%; }
     .business .business-content .business-block-1 {
       width: 51%; }
+      .business .business-content .business-block-1 .slick-arrow {
+        background-color: #f39800;
+        width: 100px;
+        height: 80px; }
+      .business .business-content .business-block-1 .slick-next:before {
+        content: ""; }
       .business .business-content .business-block-1 .content .img {
         display: block;
         width: 100%;
@@ -375,39 +381,42 @@ h2.title {
           width: 200px;
           height: 150%;
           top: -26px;
-          left: -215px;
+          left: -240px;
           transform-origin: right center;
           transform: rotate(10deg); }
         .business .business-content .business-block-1 .content .img img {
           width: 100%; }
     .business .business-content .business-block-2 {
-      width: 49%; }
-      .business .business-content .business-block-2 .content .img {
-        display: block;
-        width: 100%;
-        position: relative; }
-        .business .business-content .business-block-2 .content .img:after {
-          position: absolute;
-          background-color: white;
-          content: "";
-          width: 200px;
-          height: 158%;
-          top: 0;
-          right: -160px;
-          transform-origin: right center;
-          transform: rotate(10deg); }
-        .business .business-content .business-block-2 .content .img:before {
-          position: absolute;
-          background-color: white;
-          content: "";
-          width: 200px;
-          height: 150%;
-          top: -26px;
-          left: -182px;
-          transform-origin: right center;
-          transform: rotate(10deg); }
-        .business .business-content .business-block-2 .content .img img {
-          width: 100%; }
+      overflow: hidden;
+      width: 48%; }
+      .business .business-content .business-block-2 .content {
+        overflow: hidden; }
+        .business .business-content .business-block-2 .content .img {
+          display: block;
+          width: 100%;
+          position: relative; }
+          .business .business-content .business-block-2 .content .img:after {
+            position: absolute;
+            background-color: white;
+            content: "";
+            width: 200px;
+            height: 158%;
+            top: 0;
+            right: -160px;
+            transform-origin: right center;
+            transform: rotate(10deg); }
+          .business .business-content .business-block-2 .content .img:before {
+            position: absolute;
+            background-color: white;
+            content: "";
+            width: 200px;
+            height: 150%;
+            top: -26px;
+            left: -182px;
+            transform-origin: right center;
+            transform: rotate(10deg); }
+          .business .business-content .business-block-2 .content .img img {
+            width: 100%; }
 
 .sumie-content {
   display: flex;
