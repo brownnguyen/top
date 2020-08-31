@@ -273,7 +273,7 @@ h2.title {
     .header .list .entry {
       padding: 0; }
       .header .list .entry a {
-        letter-spacing: 2px;
+        letter-spacing: 4px;
         font-size: 2.6rem;
         width: 240px;
         height: 80px;
