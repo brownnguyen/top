@@ -1039,16 +1039,22 @@ h2.title {
     .read-content .btn-readMore {
       padding: 0;
       padding-left: 40px; }
-  .business .business-content {
-    flex-wrap: wrap; }
-    .business .business-content .business-block-1 {
-      width: 100%; }
-      .business .business-content .business-block-1 .content .img:before, .business .business-content .business-block-1 .content .img:after {
-        display: none; }
-    .business .business-content .business-block-2 {
-      width: 100%; }
-      .business .business-content .business-block-2 .content-block-2-main {
-        display: none; }
+  .business {
+    padding-bottom: 80px; }
+    .business .business-content {
+      flex-wrap: wrap; }
+      .business .business-content .business-block-1 {
+        width: 100%; }
+        .business .business-content .business-block-1 .content .img:before, .business .business-content .business-block-1 .content .img:after {
+          display: none; }
+      .business .business-content .business-block-2 {
+        width: 100%; }
+        .business .business-content .business-block-2 .content-block-2-main {
+          display: none; }
+        .business .business-content .business-block-2 .block-text {
+          position: static;
+          margin: 20px 0;
+          text-align: center; }
   .sumie-content,
   .discuss-content,
   .envi-content,

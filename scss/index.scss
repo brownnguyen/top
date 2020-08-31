@@ -1290,6 +1290,7 @@ h2.title {
     }
   }
   .business {
+    padding-bottom: 80px;
     .business-content {
       flex-wrap: wrap;
       .business-block-1 {
@@ -1307,6 +1308,11 @@ h2.title {
         width: 100%;
         .content-block-2-main {
           display: none;
+        }
+        .block-text {
+          position: static;
+          margin: 20px 0;
+          text-align: center;
         }
       }
     }
