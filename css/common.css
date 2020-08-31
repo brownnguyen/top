@@ -1,30 +1,36 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-size: 1.6rem;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  box-sizing: border-box;
 }
 html,
 body {
-    font-size: 62.5%;
-    font-family: "Noto Sans JP", sans-serif;
-    color: #262626;
+  font-size: 62.5%;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #262626;
+  overflow-x: hidden;
 }
 a {
-    text-decoration: none;
-    display: block;
+  text-decoration: none;
+  display: block;
 }
-span{
-    display: inline-block;
+span {
+  display: inline-block;
 }
 img {
-    display: block;
+  display: block;
 }
 a:hover {
-    opacity: 0.8;
-    transition: all 0.5s;
+  opacity: 0.8;
+  transition: all 0.5s;
 }
 .container {
-    max-width: 1120px;
-    margin: auto;
+  max-width: 1120px;
+  margin: auto;
+}
+@media screen and (max-width: 1024px) {
+  .m-20 {
+    margin: 0 20px;
+  }
 }
