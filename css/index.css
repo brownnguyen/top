@@ -526,7 +526,8 @@ h2.title {
             transform-origin: right center;
             transform: rotate(12deg); }
           .business .business-content .business-block-2 .content .img img {
-            width: 100%; }
+            width: 100%;
+            padding: 1px; }
       .business .business-content .business-block-2 .block-text {
         position: absolute;
         bottom: 0;
