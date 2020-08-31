@@ -356,7 +356,8 @@ h2.title {
     .top-mv .mv-slide .content .title-mv .span-main {
       font-size: 8rem;
       margin-bottom: 15px; }
-    .top-mv .mv-slide .content .title-mv p {
+    .top-mv .mv-slide .content .title-mv .deliver {
+      display: block;
       font-size: 3rem;
       font-weight: 300;
       letter-spacing: 2.5px; }
