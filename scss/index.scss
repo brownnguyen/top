@@ -735,7 +735,9 @@ h2.title {
   justify-content: space-between;
   .content {
     padding: 120px 0 65px 0;
-    overflow: hidden;
+    .img {
+      overflow: hidden;
+    }
     .btn-orange {
       max-width: 420px;
       width: 100%;

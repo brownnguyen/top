@@ -609,8 +609,9 @@ h2.title {
   display: flex;
   justify-content: space-between; }
   .philosophy-content .content {
-    padding: 120px 0 65px 0;
-    overflow: hidden; }
+    padding: 120px 0 65px 0; }
+    .philosophy-content .content .img {
+      overflow: hidden; }
     .philosophy-content .content .btn-orange {
       max-width: 420px;
       width: 100%;
