@@ -1,3 +1,5 @@
+new WOW().init();
+
 $(".mv-slide").slick({
   arrows: false,
   //   autoplay: true,
@@ -86,5 +88,3 @@ $("#backTop").click(function (event) {
   );
   return false;
 });
-
-
