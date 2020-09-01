@@ -61,8 +61,13 @@ let peopleArrowLeft = document.querySelector(".people-content .slick-prev");
 peopleArrowLeft.innerHTML = '<span class="people-arrow-left"></span>';
 let peopleArrowRight = document.querySelector(".people-content .slick-next");
 peopleArrowRight.innerHTML = '<span class="people-arrow-right"></span>';
-
 window.onscroll = function () {
+  let height = window.pageYOffset;
+  if (height > 200) {
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
+  }
   if (window.pageYOffset > window.innerHeight / 2) {
     document.querySelector("#backTop").style.opacity = 0.8;
     document.querySelector("#backTop").style.visibility = "visible";

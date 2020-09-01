@@ -279,6 +279,13 @@ h2.title {
     }
   }
 }
+.header.active {
+  transition: all 0.5s;
+  background-color: $black;
+  .logo {
+    transform: translateY(-4px);
+  }
+}
 .header {
   position: fixed;
   top: 0;
@@ -292,6 +299,7 @@ h2.title {
     padding-top: 10px;
     padding-left: 23px;
     transform: translateY(7px);
+    transition: all 0.5s;
   }
   .list {
     list-style: none;

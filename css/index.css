@@ -237,6 +237,12 @@ h2.title {
     #backTop:hover .backTop {
       border-color: white; }
 
+.header.active {
+  transition: all 0.5s;
+  background-color: #262626; }
+  .header.active .logo {
+    transform: translateY(-4px); }
+
 .header {
   position: fixed;
   top: 0;
@@ -249,7 +255,8 @@ h2.title {
   .header .logo {
     padding-top: 10px;
     padding-left: 23px;
-    transform: translateY(7px); }
+    transform: translateY(7px);
+    transition: all 0.5s; }
   .header .list {
     list-style: none;
     display: flex;
