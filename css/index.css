@@ -21,15 +21,15 @@
 .people-arrow-right {
   width: 60px;
   height: 60px;
-  border-bottom: 5px solid #f39800;
-  border-right: 5px solid #f39800;
+  border-bottom: 7px solid #f39800;
+  border-right: 7px solid #f39800;
   transform: rotate(-52deg) skew(-17deg); }
 
 .people-arrow-left {
   width: 60px;
   height: 60px;
-  border-bottom: 5px solid #f39800;
-  border-right: 5px solid #f39800;
+  border-bottom: 7px solid #f39800;
+  border-right: 7px solid #f39800;
   transform: rotate(-233deg) skew(-17deg); }
 
 .arrowRight {
@@ -47,14 +47,28 @@
 .arrowLeft {
   position: relative; }
   .arrowLeft .left {
-    position: absolute;
-    top: -9px;
-    left: 37%;
+    position: relative;
     width: 32px;
-    height: 14px;
-    border-bottom: 5px solid white;
-    border-left: 5px solid white;
-    transform: skewX(-48deg); }
+    height: 20px;
+    overflow: hidden; }
+    .arrowLeft .left:before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: '';
+      width: 100%;
+      background-color: white;
+      height: 4px; }
+    .arrowLeft .left:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: '';
+      background-color: white;
+      width: 50%;
+      height: 4px;
+      transform: rotate(-45deg);
+      transform-origin: left center; }
 
 .horizon-class-orange {
   width: 100%;
@@ -456,18 +470,31 @@ h2.title {
     .business .business-content .business-block-1 {
       width: 51%; }
       .business .business-content .business-block-1 .slick-arrow {
-        background-color: #f39800;
-        transform: skew(-14deg);
+        display: block;
+        justify-content: center;
+        align-items: center;
         width: 100px;
         height: 80px; }
         .business .business-content .business-block-1 .slick-arrow:hover {
           opacity: 0.8; }
+        .business .business-content .business-block-1 .slick-arrow:before {
+          width: 100px;
+          height: 80px;
+          content: '';
+          display: block;
+          transform: skewX(-15deg);
+          background-color: #f39800;
+          opacity: 1;
+          position: absolute;
+          top: 0;
+          z-index: -1;
+          left: 0; }
+        .business .business-content .business-block-1 .slick-arrow img {
+          margin: auto; }
       .business .business-content .business-block-1 .slick-next {
         bottom: 40px;
         right: 80px;
         top: auto; }
-        .business .business-content .business-block-1 .slick-next:before {
-          content: ""; }
       .business .business-content .business-block-1 .slick-prev {
         top: auto;
         bottom: 40px;
@@ -955,7 +982,7 @@ h2.title {
 .footer {
   background-color: #f39800; }
   .footer .footer-content {
-    font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku 　Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+    font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku 　Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -973,7 +1000,8 @@ h2.title {
         margin-right: 40px; }
       .footer .footer-content .block p {
         color: white;
-        font-size: 1.4rem; }
+        font-size: 1.4rem;
+        padding-right: 50px; }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .btn-orange {
@@ -987,7 +1015,7 @@ h2.title {
     .discuss-content .content .btn-orange .text {
       padding-top: 16px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .header {
     height: 80px;
     align-items: center;
@@ -1043,6 +1071,10 @@ h2.title {
         transform: translateY(0) rotate(495deg); }
       .header .menu-burger .menu.active span:first-of-type {
         transform: rotate(405deg); }
+  .header.active .logo {
+    transform: translate(0); } }
+
+@media screen and (max-width: 768px) {
   .top-mv {
     margin-top: 70px; }
     .top-mv .mv-slide .content .title-mv {
@@ -1113,8 +1145,10 @@ h2.title {
       .philosophy-content .left img,
       .philosophy-content .right img {
         width: 100%; }
-  .philosophy-content .content .btn-orange {
-    transform: translateY(-35px); }
+  .philosophy-content .content {
+    padding: 100px 0 0 0; }
+    .philosophy-content .content .btn-orange {
+      transform: translateY(-35px); }
   .information .info-main .info-content {
     margin: 0 10px; }
   .information .profile .profile-content {
@@ -1148,12 +1182,15 @@ h2.title {
     .business .business-content .business-block-1 .slick-arrow {
       width: 80px;
       height: 50px; }
+      .business .business-content .business-block-1 .slick-arrow::before {
+        width: 80px;
+        height: 50px; }
     .business .business-content .business-block-1 .slick-next {
-      top: 70%;
+      bottom: 0;
       right: 20px; }
     .business .business-content .business-block-1 .slick-prev {
       right: 110px;
-      top: 70%; }
+      bottom: 0; }
   .philosophy-content .content {
     padding: 20px 0; }
   .envi-content {
@@ -1176,6 +1213,8 @@ h2.title {
     flex-wrap: wrap; }
     .footer .footer-content .block a:first-of-type {
       margin-right: 10px; }
+    .footer .footer-content .block p {
+      padding-right: 0; }
   .read-content .btn-readMore {
     padding-left: 20px; }
     .read-content .btn-readMore:before {
